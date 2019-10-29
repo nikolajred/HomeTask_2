@@ -1,6 +1,7 @@
 package com.nix;
 
 public class ZigZagConversion {
+    public static String s = "PAYPALISHIRING";
     public String convert(String s, int numRows) {
         if (numRows == 1)
             return s;
@@ -27,5 +28,10 @@ public class ZigZagConversion {
             }
         }
         return str.toString();
+    }
+
+    public static void main(String[] args) {
+        ZigZagConversion zigZagConversion = new ZigZagConversion();
+        zigZagConversion.convert(s, 3);
     }
 }
